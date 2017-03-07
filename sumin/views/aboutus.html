@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="./public/head.html?__inline">
+    <link rel="stylesheet" type="text/css" href="../statics/less/public/public.css">
+    <link rel="stylesheet" type="text/css" href="../statics/less/home.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_y9q702nevgupiudi.css">
+</head>
+<body>
+	<div class="page-group">
+        <div class="page page-current">
+
+        	<link rel="import" href="./public/header.html?__inline">
+            
+            <!-- 左滑导航 开始 -->
+            <div class="animate-l">
+                <span class="close">×</span>
+                <ul>
+                    <a href="home.html" class="external"><li><i class="iconfont icon-fangzi"></i>首页</li></a>
+                    <a href="aboutus.html" class="external"><li class="active"><i class="iconfont icon-guanyuwomen"></i>关于我们</li></a>
+                    <a href="invest.html" class="external"><li><i class="iconfont icon-xiaozhu"></i>投资业务</li></a>
+                    <a href="coop.html" class="external"><li><i class="iconfont icon-hezuoxuanzhong"></i>合作互动</li></a>
+                    <a href="recruit.html" class="external"><li><i class="iconfont icon-meiyuanqianbao"></i>招贤纳士</li></a>
+                    <a href="newcenter.html" class="external"><li><i class="iconfont icon-luxianghuifang"></i>新闻中心</li></a>
+                    <a href="contact.html" class="external"><li><i class="iconfont icon-youjian"></i>联系我们</li></a>
+                </ul>
+            </div>
+            <!-- 左滑导航 结束 -->
+
+            <div class="bar aboutus">
+                <span>关于我们</span>
+                <img src="../statics/img/public/anjian-r.png" class="right">
+            </div>
+
+            <link rel="import" href="./public/right.html?__inline">
+
+            <div class="slider-none">
+                <img src="../statics/img/public/banner.png">
+            </div>
+
+            <div class="content-padded">
+                <p><span>江苏民营投资控股有限公司（简称“苏民投”）是全国首家省级民营投资集团，规划注册资本300亿元人民币，首期86亿元。公司由江苏省工商联、无锡市政府协调推动，沙钢集团、协鑫集团、红豆集团等10余家江苏知名民营企业联合设立，于2016年6月正式投入运营，注册地设在无锡，正在北京、上海、南京、深圳、香港等地布局发展。</span></p>
+                <p><span>苏民投的使命是“汇聚民营资本 推动转型升级”。因此，苏民投将深耕江苏，充分发挥江苏省民营企业的资本优势、资源优势和市场竞争优势，以“投资+产业+金融”一体化为发展方向，着力打造“四大业务平台”：</span></p>
+                <p><span><b>在产业整合方面</b>，苏民投实施多级市场联动的投资策略，设立并购基金和产业投资基金，布局重大基础设施投资、新能源与节能环保、物联网与智能制造、互联网和互联网+等领域，参与国有企业混合所有制改革、企业兼并重组和产业链整合，支持创新型企业发展，推动传统产业转型升级；</span></p>
+                <p><span><b>在资产管理方面</b>，苏民投有效聚集社会资本，积极发展资产证券化、不良资产处置等资产管理业务，通过发行债券和推动成熟项目境内外上市等资本运作方式，为企业及政府提供资产管理服务；</span></p>
+                <p><span><b>在金融服务方面</b>，苏民投重点投资参控股银行、证券、保险、信托等金融机构，依法发起或参与设立中小型金融机构，形成综合性金融服务网络，为产业转型升级提供全面金融支持服务；</span></p>
+                <p><span><b>在海外并购方面</b>，苏民投积极响应国家“一带一路”和“走出去”战略的号召，开展海外投资并购业务，助推江苏企业走向全球产业链高端，开拓全球市场布局。</span></p>
+                <p><span>立足江苏，面向全国，放眼世界。苏民投正在国内与海外积极展开投资布局，助推民营企业实现转型升级。我们愿与国内外合作伙伴开展深度交流与互动，聚合各方资源，实现合作共赢。我们欢迎各界优秀人才的加盟，共同将苏民投打造成服务产业升级转型的一流金融投资集团。</span></p>
+            </div>
+    		
+    		<div style="width:100%;height:2.5rem;float:left;"></div>
+
+    		<link rel="import" href="./public/footer.html?__inline">
+
+        </div>
+    </div>
+    <link rel="import" href="./public/foot.html?__inline">
+</body>
+</html>
+<script src="../statics/js/public/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".left").click(function(){
+            $(".animate-l").animate({left:'0'});
+        });
+        $(".close").click(function(){
+            $(".animate-l").animate({left:'-45%'});
+        });
+        $(".right").click(function(){
+            $(".animate-r").animate({right:'0'});
+        });
+        $(".close-r").click(function(){
+            $(".animate-r").animate({right:'-45%'});
+        });
+    });
+</script>

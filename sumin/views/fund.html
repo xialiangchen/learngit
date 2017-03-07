@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="./public/head.html?__inline">
+    <link rel="stylesheet" type="text/css" href="../statics/less/public/public.css">
+    <link rel="stylesheet" type="text/css" href="../statics/less/home.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_y9q702nevgupiudi.css">
+</head>
+<body>
+	<div class="page-group">
+        <div class="page page-current">
+
+        	<link rel="import" href="./public/header.html?__inline">
+            
+            <!-- 左滑导航 开始 -->
+            <div class="animate-l">
+                <span class="close">×</span>
+                <ul>
+                    <a href="home.html" class="external"><li><i class="iconfont icon-fangzi"></i>首页</li></a>
+                    <a href="aboutus.html" class="external"><li><i class="iconfont icon-guanyuwomen"></i>关于我们</li></a>
+                    <a href="invest.html" class="external"><li class="active"><i class="iconfont icon-xiaozhu"></i>投资业务</li></a>
+                    <a href="coop.html" class="external"><li><i class="iconfont icon-hezuoxuanzhong"></i>合作互动</li></a>
+                    <a href="recruit.html" class="external"><li><i class="iconfont icon-meiyuanqianbao"></i>招贤纳士</li></a>
+                    <a href="newcenter.html" class="external"><li><i class="iconfont icon-luxianghuifang"></i>新闻中心</li></a>
+                    <a href="contact.html" class="external"><li><i class="iconfont icon-youjian"></i>联系我们</li></a>
+                </ul>
+            </div>
+            <!-- 左滑导航 结束 -->
+
+            <div class="bar aboutus">
+                <span>业务介绍</span>
+            </div>
+
+            <div class="slider-none">
+                <img src="../statics/img/public/banner.png">
+            </div>
+
+            <div class="content-padded">
+                <div class="fund">
+                    <p>基金业务模式</p>
+                    <p><span>上层建立母基金，投资到下一层面的优秀业务团队及子基金</span></p>
+                    <p><span>汇聚各方项目资源、人才和LP配套资金。增强公司汇聚资源的能力，以及投资领域的覆盖面。</span></p>
+                    <p>基金设立进展</p>
+                </div>
+            </div>
+    		
+    		<div style="width:100%;height:2.5rem;float:left;"></div>
+
+    		<link rel="import" href="./public/footer.html?__inline">
+
+        </div>
+    </div>
+    <link rel="import" href="./public/foot.html?__inline">
+</body>
+</html>
+<script src="../statics/js/public/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".left").click(function(){
+            $(".animate-l").animate({left:'0'});
+        });
+        $(".close").click(function(){
+            $(".animate-l").animate({left:'-45%'});
+        });
+    });
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="../statics/js/public/jquery.min.js"></script>
+    <style type="text/css">
+    .content{
+        display: none;
+    }
+    </style>
+    <title>RunJS 演示代码</title>
+ 
+    <script>
+        $(function(){
+            $(".btn").click(function(){
+                var me = $(this);
+                me.next(".content").toggle();
+                me.closest(".box").siblings(".box").find(".content:visible").hide();
+            });
+        });
+    </script>
+  </head>
+<body>
+    <div class="box"> <!--BOX区域 1-->
+ 
+    <div class="btn">BOX区域 1</div>
+    <div class="content">111</div>
+ 
+</div>
+<div class="box"> <!--BOX区域 2-->
+    <div class="btn">BOX区域 2</div>
+    <div class="content">222</div>
+ 
+</div>
+<div class="box"> <!--BOX区域 3-->
+    <div class="btn">BOX区域 3</div>
+    <div class="content">333</div>
+ 
+</div>
+  </body>
+</html>

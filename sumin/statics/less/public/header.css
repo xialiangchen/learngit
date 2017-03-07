@@ -1,0 +1,29 @@
+body{
+	font-family: 微软雅黑;
+}
+/* 标题栏 开始 */
+.bar{
+	position: fixed;
+}
+.bar-nav{
+	background-color: #d32f14;
+}
+.bar-nav a img{
+	height: 2.2rem;
+	display: block;
+	margin: 0 auto;
+}
+.bar-nav .title{
+	width: 70%;
+	margin-left: 15%;
+}
+.bar-nav .title img{
+	height: 2.2rem;
+	display: block;
+	margin: 0 auto;
+}
+.page.page-current{
+	overflow: auto;
+	background-color: #fff;
+}
+/* 标题栏 结束 */

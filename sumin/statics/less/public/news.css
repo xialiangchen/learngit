@@ -1,0 +1,23 @@
+/* 新闻 开始 */
+.com_new{
+	margin-top: 2%;
+	float:left;
+}
+.com_new .news{
+	width: 49%;
+	display: block;
+	float: left;
+	margin-right: 1%;
+}
+.com_new .video{
+	width: 49%;
+	display: block;
+	float: right;
+}
+.com_new .det{
+	width: 49%;
+	display: block;
+	float: right;
+	margin-top: 1%;
+}
+/* 新闻 开始 */

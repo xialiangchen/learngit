@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="./public/head.html?__inline">
+    <link rel="stylesheet" type="text/css" href="../statics/less/public/public.css">
+    <link rel="stylesheet" type="text/css" href="../statics/less/home.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_y9q702nevgupiudi.css">
+</head>
+<body>
+	<div class="page-group">
+        <div class="page page-current">
+
+        	<link rel="import" href="./public/header.html?__inline">
+            
+            <!-- 左滑导航 开始 -->
+            <div class="animate-l">
+                <span class="close">×</span>
+                <ul>
+                    <a href="home.html" class="external"><li class="active"><i class="iconfont icon-fangzi"></i>首页</li></a>
+                    <a href="aboutus.html" class="external"><li><i class="iconfont icon-guanyuwomen"></i>关于我们</li></a>
+                    <a href="invest.html" class="external"><li><i class="iconfont icon-xiaozhu"></i>投资业务</li></a>
+                    <a href="coop.html" class="external"><li><i class="iconfont icon-hezuoxuanzhong"></i>合作互动</li></a>
+                    <a href="recruit.html" class="external"><li><i class="iconfont icon-meiyuanqianbao"></i>招贤纳士</li></a>
+                    <a href="newcenter.html" class="external"><li><i class="iconfont icon-luxianghuifang"></i>新闻中心</li></a>
+                    <a href="contact.html" class="external"><li><i class="iconfont icon-youjian"></i>联系我们</li></a>
+                </ul>
+            </div>
+            <!-- 左滑导航 结束 -->
+            
+            <form action="" method="">
+                <div class="bar bar-header-secondary">
+                    <div class="searchbar">
+                        <a class="searchbar-cancel">取消</a>
+                        <div class="search-input">
+                            <label class="icon icon-search" for="search"></label>
+                            <input type="search" id='search' placeholder='输入关键字...'/>
+                            <input type="submit" value='搜索' class="submit" />
+                        </div>
+                    </div> 
+                    <p class="search-none"><i class="iconfont icon-gantanhao"></i>无法找到该信息</p>   
+                </div>
+            </form>
+
+    		<link rel="import" href="./public/footer.html?__inline">
+
+        </div>
+    </div>
+    <link rel="import" href="./public/foot.html?__inline">
+</body>
+</html>
+<script src="../statics/js/public/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".left").click(function(){
+            $(".animate-l").animate({left:'0'});
+        });
+        $(".close").click(function(){
+            $(".animate-l").animate({left:'-45%'});
+        });
+    });
+</script>

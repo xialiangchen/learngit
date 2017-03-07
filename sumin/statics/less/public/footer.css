@@ -1,0 +1,14 @@
+/* 工具栏 开始 */
+.bar-tab{
+	background-color: #606060;
+	position: fixed;
+	z-index: 999;
+}
+.bar-tab:before{
+	height: 0;
+}
+.bar-tab .iconfont{
+	font-size: 1.5rem;
+	color: #fff;
+}
+/* 工具栏 结束 */
